@@ -28,7 +28,7 @@ comment_id | 回复哪条评论的评论id | 是
         "id": 1,
         "nickname": "linhe123",
         "content": "Hello Node.js",
-        "created_at": "2019-11-14T04:39:13.834Z",
+        "create_time": "2019-11-14T04:39:13.834Z",
         "comment_id": "1"
     }
 }
@@ -52,7 +52,7 @@ GET    /reply/:id
     "msg": "success",
     "errorCode": 0,
     "data": {
-        "created_at": "2019-11-14",
+        "create_time": "2019-11-14",
         "id": 1,
         "nickname": "linhe123",
         "comment_id": 1

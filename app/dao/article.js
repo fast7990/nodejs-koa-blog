@@ -152,7 +152,7 @@ class ArticleDao {
         offset: (page - 1) * page_size,
         where: filter,
         order: [
-          ['created_at', 'DESC']
+          ['create_time', 'DESC']
         ]
       });
 

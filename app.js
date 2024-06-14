@@ -1,19 +1,18 @@
+require('dotenv').config();
 const Koa = require('koa')
 const InitManager = require('./core/init')
 const parser = require('koa-bodyparser')
 const cors = require('@koa/cors');
 const ratelimit = require('koa-ratelimit');
-
 require('module-alias/register')
 
 const views = require('koa-views');
 const {resolve} = require('path')
 const koaStatic = require('koa-static')
-
 const catchError = require('./middlewares/exception')
-
 const app = new Koa()
 
+console.log("=====11",process.env.NODE_ENV)
 app.use(koaStatic(__dirname + '/public'))
 app.use(views(resolve(__dirname, './views'), {
   extension: 'ejs'
@@ -50,7 +49,7 @@ app.use(ratelimit({
 
 InitManager.initCore(app)
 
-app.listen(5000, () => {
+app.listen(8080, () => {
   console.log('Koa is listening in http://localhost:5000')
 })
 

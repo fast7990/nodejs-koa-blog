@@ -31,7 +31,7 @@ target_type | 评论类型，普通文章为：article，专栏文章为：colum
         "content": "Hello Node.js",
         "target_id": "1",
         "target_type": "article",
-        "created_at": "2019-11-14T04:33:37.048Z"
+        "create_time": "2019-11-14T04:33:37.048Z"
     }
 }
 ```
@@ -54,7 +54,7 @@ GET    /comment/:id
     "msg": "success",
     "errorCode": 0,
     "data": {
-        "created_at": "2019-11-14",
+        "create_time": "2019-11-14",
         "id": 1,
         "target_id": 1,
         "target_type": "article",

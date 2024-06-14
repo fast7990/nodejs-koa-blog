@@ -46,18 +46,18 @@ User.init({
         defaultValue: 1,
         comment: '用户状态:0-禁用,1-正常'
     },
-    created_at: {
+    create_time: {
         type: DataTypes.DATE,
         allowNull: false,
         comment: '创建时间',
         get() {
-            return moment(this.getDataValue('created_at')).format('YYYY-MM-DD HH:mm:ss');
+            return moment(this.getDataValue('create_time')).format('YYYY-MM-DD HH:mm:ss');
         }
     }
 }, {
     sequelize,
     modelName: 'user',
-    tableName: 'user'
+    tableName: 'sys_user'
 })
 
 

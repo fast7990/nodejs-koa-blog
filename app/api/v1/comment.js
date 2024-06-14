@@ -26,7 +26,7 @@ router.post('/comment', async (ctx) => {
       status: data.status,
       article_id: data.article_id,
       user_id: data.user_id,
-      created_at: data.created_at
+      create_time: data.create_time
     };
     // 返回结果
     ctx.response.status = 200;

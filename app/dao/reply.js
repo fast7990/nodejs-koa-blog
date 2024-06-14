@@ -62,7 +62,7 @@ class ReplyDao {
           deleted_at: null
         },
         attributes: {
-          exclude: ['email', 'updated_at']
+          exclude: ['email', 'update_time']
         }
       });
       if (!reply) {
@@ -306,7 +306,7 @@ class ReplyDao {
       const res = await Reply.findAndCountAll({
         where: finner,
         order: [
-          ['created_at', 'DESC']
+          ['create_time', 'DESC']
         ]
       });
       let reply = res.rows

@@ -56,7 +56,7 @@ class CommentDao {
           deleted_at: null
         },
         attributes: {
-          exclude: ['updated_at']
+          exclude: ['update_time']
         }
 
       });
@@ -157,10 +157,10 @@ class CommentDao {
         offset: (page - 1) * pageSize,
         where: finner,
         order: [
-          ['created_at', 'DESC']
+          ['create_time', 'DESC']
         ],
         attributes: {
-          exclude: ['updated_at']
+          exclude: ['update_time']
         },
       })
 
@@ -210,7 +210,7 @@ class CommentDao {
         page_size = 10,
         status = -1,
         page = 1,
-        desc = 'created_at'
+        desc = 'create_time'
       } = params;
 
       // if (!article_id) {
@@ -243,7 +243,7 @@ class CommentDao {
           [desc, 'DESC']
         ],
         attributes: {
-          exclude: ['updated_at']
+          exclude: ['update_time']
         },
       })
 
@@ -294,7 +294,7 @@ class CommentDao {
         status: 1,
         deleted_at: null
       },
-      attributes: ['id', 'content', 'comment_id', 'status', 'user_id', 'reply_user_id', 'created_at']
+      attributes: ['id', 'content', 'comment_id', 'status', 'user_id', 'reply_user_id', 'create_time']
     }
     const isArrayIds = isArray(ids)
 

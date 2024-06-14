@@ -73,12 +73,12 @@ Article.init({
     allowNull: false,
     comment: '关联分类ID'
   },
-  created_at: {
+  create_time: {
     type: DataTypes.DATE,
     allowNull: false,
     comment: '创建时间',
     get() {
-      return moment(this.getDataValue('created_at')).format('YYYY-MM-DD HH:mm:ss');
+      return moment(this.getDataValue('create_time')).format('YYYY-MM-DD HH:mm:ss');
     }
   }
 }, {

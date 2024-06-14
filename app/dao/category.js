@@ -130,7 +130,7 @@ class CategoryDao {
         limit: page_size, //每页10条
         offset: (page - 1) * page_size,
         order: [
-          ['created_at', 'DESC']
+          ['create_time', 'DESC']
         ]
       });
 

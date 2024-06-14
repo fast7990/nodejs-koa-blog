@@ -24,11 +24,11 @@ link | 广告链接 | 是
     "msg": "success",
     "errorCode": 0,
     "data": {
-        "created_at": "2019-12-15",
+        "create_time": "2019-12-15",
         "id": 3,
         "title": "广告标题",
         "link": "https://www.boblog.com/",
-        "updated_at": "2019-12-15T12:19:07.194Z"
+        "update_time": "2019-12-15T12:19:07.194Z"
     }
 }
 ```
@@ -51,7 +51,7 @@ GET    /advertise/:id
     "msg": "success",
     "errorCode": 0,
     "data": {
-        "created_at": "2019-12-15",
+        "create_time": "2019-12-15",
         "id": 3,
         "title": "广告标题",
         "link": "https://www.boblog.com/"

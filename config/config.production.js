@@ -1,11 +1,11 @@
 module.exports = {
-  environment: 'dev',
+  environment: 'production',
   database: {
-    dbName: 'boblog',
-    host: 'localhost',
+    dbName: 'youlai_boot',
+    host: '10.34.105.166',
     port: 3306,
     user: 'root',
-    password: 'bobo1024.'
+    password: 'Aa1008611.'
   },
   security: {
     secretKey: "secretKey",

@@ -55,7 +55,7 @@ reply | 评论下的回复
     "msg": "success",
     "errorCode": 0,
     "data": {
-        "created_at": "2019-11-14",
+        "create_time": "2019-11-14",
         "id": 1,
         "title": "深入浅出 Node.js",
         "author": "梁凤波",
@@ -63,11 +63,11 @@ reply | 评论下的回复
         "content": "hello world",
         "cover": "http://cdn.boblog.com/FmdNNoR1MRtgvmQD1KwaKzbkL_i7",
         "browse": 1,
-        "updated_at": "2019-11-14T04:25:22.000Z",
+        "update_time": "2019-11-14T04:25:22.000Z",
         "deleted_at": null,
         "category_id": 1,
         "category": {
-            "created_at": "2019-11-14",
+            "create_time": "2019-11-14",
             "id": 1,
             "name": "html",
             "key": "html",
@@ -96,7 +96,7 @@ GET    /article
 参数 | 说明 | 是否必填
 ---|---|:---:
 page | 分页 | 否
-desc | 排序，默认最新：created_at，浏览次数：browse | 否
+desc | 排序，默认最新：create_time，浏览次数：browse | 否
 category_id | 分类ID | 否
 keyword | 搜索关键字 | 否
 
@@ -112,7 +112,7 @@ category | 文章关联的分类详情
     "data": {
         "data": [
             {
-                "created_at": "2019-11-14",
+                "create_time": "2019-11-14",
                 "id": 1,
                 "title": "深入浅出 Node.js",
                 "author": "梁凤波",
@@ -121,7 +121,7 @@ category | 文章关联的分类详情
                 "browse": 0,
                 "category_id": 1,
                 "category": {
-                    "created_at": "2019-11-14",
+                    "create_time": "2019-11-14",
                     "id": 1,
                     "name": "html",
                     "key": "html",
@@ -198,7 +198,7 @@ GET    /search/article
 ---|---|:---:
 keyword | 文章标题关键字 | 是
 page | 页码 | 否
-desc | 排序，默认最新：created_at，浏览次数：browse | 否
+desc | 排序，默认最新：create_time，浏览次数：browse | 否
 
 ### 成功操作返回
 
@@ -210,7 +210,7 @@ desc | 排序，默认最新：created_at，浏览次数：browse | 否
     "data": {
         "data": [
             {
-                "created_at": "2019-11-14",
+                "create_time": "2019-11-14",
                 "id": 1,
                 "title": "深入浅出 Node.js",
                 "author": "梁凤波",
@@ -218,11 +218,11 @@ desc | 排序，默认最新：created_at，浏览次数：browse | 否
                 "content": "hello world",
                 "cover": "http://cdn.boblog.com/FmdNNoR1MRtgvmQD1KwaKzbkL_i7",
                 "browse": 1,
-                "updated_at": "2019-11-14T04:27:37.000Z",
+                "update_time": "2019-11-14T04:27:37.000Z",
                 "deleted_at": null,
                 "category_id": 1,
                 "category": {
-                    "created_at": "2019-11-14",
+                    "create_time": "2019-11-14",
                     "id": 1,
                     "name": "html",
                     "key": "html",

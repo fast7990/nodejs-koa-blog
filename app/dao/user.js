@@ -162,7 +162,7 @@ class UserDao {
         limit: 10,
         offset: (page - 1) * page_size,
         order: [
-          ['created_at', 'DESC']
+          ['create_time', 'DESC']
         ]
       })
 
