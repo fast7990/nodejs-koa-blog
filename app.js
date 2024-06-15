@@ -1,3 +1,11 @@
+/*
+ * @Author: fast7990 immengxingchen@qq.com
+ * @Date: 2024-06-15 09:00:46
+ * @LastEditors: fast7990 immengxingchen@qq.com
+ * @LastEditTime: 2024-06-15 09:16:20
+ * @FilePath: \nodejs-koa-blog\app.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 require('dotenv').config();
 const Koa = require('koa')
 const InitManager = require('./core/init')
@@ -50,7 +58,7 @@ app.use(ratelimit({
 InitManager.initCore(app)
 
 app.listen(8080, () => {
-  console.log('Koa is listening in http://localhost:5000')
+  console.log('Koa is listening in http://localhost:8080')
 })
 
 module.exports = app
