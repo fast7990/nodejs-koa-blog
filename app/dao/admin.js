@@ -27,7 +27,7 @@ class AdminDao {
     admin.nickname = nickname
     admin.email = email
     admin.password = password
-
+    console.log(params,"============")
     try {
       const res = await admin.save();
 
