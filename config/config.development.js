@@ -1,8 +1,8 @@
 /*
  * @Date: 2024-06-14 18:29:13
  * @LastEditors: v-huangshaopeng
- * @LastEditTime: 2024-06-14 18:29:55
- * @FilePath: \nodejs-koa-blog\config\dev.config.js
+ * @LastEditTime: 2024-06-17 10:10:47
+ * @FilePath: \nodejs-koa-blog\config\config.development.js
  */
 module.exports = {
   environment: 'development',
