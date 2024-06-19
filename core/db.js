@@ -41,7 +41,9 @@ const sequelize = new Sequelize(dbName, user, password, {
 })
 
 // 创建模型
-sequelize.sync({ force: false })
+sequelize.sync({
+  force: false
+})
 
 sequelize.authenticate().then(res => {
   console.log('Connection has been established successfully.');

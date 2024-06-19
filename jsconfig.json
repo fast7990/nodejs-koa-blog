@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+        "@app/*": ["app/*"],
+        "@core/*": ["core/*"],
+        "@middlewares/*": ["middlewares/*"],
+        "@api/*": ["app/api/*"],
+        "@dao/*": ["app/dao/*"],
+        "@lib/*": ["app/lib/*"],
+        "@models/*": ["app/models/*"],
+        "@service/*": ["app/service/*"],
+        "@validators/*": ["app/validators/*"],
+      }
+    },
+    "exclude": ["node_modules","_tests","doc","vue-blog-admin"]
+  }
