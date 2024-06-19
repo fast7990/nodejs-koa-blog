@@ -9,8 +9,8 @@ WORKDIR /app
 RUN npm install
 # 配置环境变量
 # ENV HOST 0.0.0.0
-ENV PORT 8080
+ENV PORT 3000
 # 容器对外暴露的端口号
-EXPOSE 8080
+EXPOSE 3000
 # 容器启动时执行的命令，CMD cd /app && ./start.sh
 CMD ["npm","start"]
