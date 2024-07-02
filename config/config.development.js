@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-06-14 18:29:13
  * @LastEditors: v-huangshaopeng
- * @LastEditTime: 2024-06-19 15:57:08
+ * @LastEditTime: 2024-07-02 14:16:30
  * @FilePath: \nodejs-koa-blog\config\config.development.js
  */
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     host: 'sh-cynosdbmysql-grp-n28ca842.sql.tencentcdb.com',
     port: 22278,
     user: 'root',
-    password: 'Aa1008611.'
+    password: 'Aa1008611'
   },
   security: {
     secretKey: "secretKey",
