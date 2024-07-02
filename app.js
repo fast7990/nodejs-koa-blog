@@ -20,7 +20,7 @@ const koaStatic = require('koa-static')
 const catchError = require('./middlewares/exception')
 const app = new Koa()
 
-console.log("=====11",process.env.NODE_ENV)
+// console.log("=====11",process.env.NODE_ENV)
 app.use(koaStatic(__dirname + '/public'))
 app.use(views(resolve(__dirname, './views'), {
   extension: 'ejs'

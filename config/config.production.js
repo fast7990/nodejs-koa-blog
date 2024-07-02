@@ -8,7 +8,7 @@ module.exports = {
     password: 'Aa1008611'
   },
   security: {
-    secretKey: "secretKey",
+    secretKey: "L9KX0JAcD41CRAU3w4he",
     // 过期时间 1小时
     expiresIn: 60 * 60
   }
